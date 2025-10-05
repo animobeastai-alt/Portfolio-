@@ -1,0 +1,208 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.btn {
+  background: #00bfa5;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #00897b;
+}
+
+.hero-img img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+/* Visionary Meter Section */
+.visionary-meter-section {
+  text-align: center;
+  margin: 1.5rem auto;
+}
+
+.glass-meter {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 1rem 2rem;
+  width: 280px;
+  margin: 1rem auto;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.meter-slider {
+  width: 100%;
+  appearance: none;
+  height: 6px;
+  background: #00bfa5;
+  border-radius: 3px;
+  outline: none;
+  margin-bottom: 1rem;
+}
+
+.meter-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #00bfa5;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 191, 165, 0.6);
+}
+
+.meter-labels {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.meter-labels .active {
+  color: #00bfa5;
+  font-weight: 600;
+}
+
+/* Glass Sections */
+.glass-section {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  margin: 2rem 1rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Contact Grid */
+.contact-card {
+  text-align: center;
+}
+
+.contact-grid-centered {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.contact-item-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-item-centered img {
+  width: 40px;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #fff;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Experience Section */
+.experience-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.section-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+#work .section-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+@media (min-width: 768px) {
+  #work .section-img {
+    max-height: 400px;
+    object-fit: cover;
+  }
+
+  .section-img {
+    max-width: 45%;
+  }
+}
+.contact-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  transition: color 0.3s ease;
+}
+
+.contact-item-centered a:hover .contact-label {
+  color: #00bfa5;
+}
